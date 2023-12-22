@@ -11,7 +11,7 @@ public class BoardConsoleRenderer {
     public static final String ANSI_HIGHLIGHTED_SQUARE_BACKGROUND = "\u001B[45m";
     public void render (Board board) {
         for (int rank = 8; rank >= 1; rank--) {
-            String line = "";
+            String line = "  ";
             for (File file : File.values()) {
                 Cordinates cordinates = new Cordinates(file, rank);
                 if (board.isSquareEmpty(cordinates)) {
@@ -31,12 +31,12 @@ public class BoardConsoleRenderer {
     }
 
     private String getSpriteForEmprtySquare(Cordinates cordinates) {
-        return colorizeSprite("   ", Color.WHITE, Board.isSqureDark(cordinates));
+        return colorizeSprite("ㅤ  ", Color.WHITE, Board.isSqureDark(cordinates));
     }
 
     private String setUnicodeSpriteForPiece(Piece piece) {
         return switch (piece.getClass().getSimpleName()) {
-            case "Pawn" -> "♟";
+            case "Pawn" -> "♙";
             case "Knight" -> "♞";
             case "Bishop" -> "♝";
             case "Rook" -> "♜";
