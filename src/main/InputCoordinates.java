@@ -1,5 +1,7 @@
 package main;
 
+import main.piece.*;
+
 import java.util.*;
 
 public class InputCoordinates {
@@ -41,8 +43,50 @@ public class InputCoordinates {
         }
     }
 
+    public static Coordinates inputPieceCoordinatesForColor(Color color, Board board) {
+        while (true) {
+            System.out.println("Enter coordinates for a piece to move: ");
+
+            Coordinates coordinates = input();
+            if (board.isSquareEmpty(coordinates)) {
+                System.out.println("Empty square");
+                continue;
+            }
+
+            Piece piece = board.getPiece(coordinates);
+            if (piece.color != color) {
+                System.out.println("Wrong color");
+                continue;
+            }
+
+            Set<Coordinates> availableMoveSquare = piece.getAvailableMoveSquares(board);
+
+            if (availableMoveSquare.size() == 0) {
+                System.out.println("Blocked piece");
+                continue;
+            }
+
+            return coordinates;
+        }
+    }
+
+    public static Coordinates inputAvailableSquare(Set<Coordinates> coordinates) {
+        while (true) {
+            Coordinates input = input();
+
+            if (!coordinates.contains(input)) {
+                System.out.println("Non available");
+                continue;
+            }
+
+            return input;
+        }
+    }
     public static void main(String[] args) {
-        Coordinates coordinates = input();
+        Board board = new Board();
+        board.setupDefaultPiecesPositions();
+
+        Coordinates coordinates = inputPieceCoordinatesForColor(Color.WHITE, board);
         System.out.println(coordinates);
     }
 }

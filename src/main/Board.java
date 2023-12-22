@@ -17,7 +17,7 @@ public class Board {
     }
 
     public void movePiece(Coordinates from, Coordinates to) {
-        Piece piece = gerPiece(from);
+        Piece piece = getPiece(from);
         setPiece(to, piece);
     }
 
@@ -63,7 +63,7 @@ public class Board {
         return !pieces.containsKey(coordinates);
     }
 
-    public Piece gerPiece(Coordinates coordinates) {
+    public Piece getPiece(Coordinates coordinates) {
         return pieces.get(coordinates);
     }
 }
