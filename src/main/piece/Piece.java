@@ -29,7 +29,7 @@ abstract public class Piece {
     }
 
     private boolean isSquareAvailableForMove(Coordinates coordinates, Board board) {
-        return board.isSquareEmpty(coordinates) || board.gerPiece(coordinates).color != color;
+        return board.isSquareEmpty(coordinates) || board.getPiece(coordinates).color != color;
     }
 
     protected abstract Set<CoordinatesShift> getPieceMoves();

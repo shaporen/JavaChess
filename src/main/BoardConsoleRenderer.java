@@ -17,7 +17,7 @@ public class BoardConsoleRenderer {
                 if (board.isSquareEmpty(coordinates)) {
                     line += getSpriteForEmprtySquare(coordinates);
                 } else {
-                    line += getPieceSprite(board.gerPiece(coordinates));
+                    line += getPieceSprite(board.getPiece(coordinates));
                 }
             }
             line += ANSI_RESET;

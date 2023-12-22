@@ -2,6 +2,8 @@ package main;
 
 import main.piece.*;
 
+import java.util.*;
+
 public class Game {
     private final Board board;
     private BoardConsoleRenderer renderer = new BoardConsoleRenderer();
@@ -15,11 +17,18 @@ public class Game {
 
         while(true) {
             renderer.render(board);
+
             //input
-            Coordinates coordinates = InputCoordinates.
+            Coordinates sourceCoordinates = InputCoordinates.
                     inputPieceCoordinatesForColor(isWhiteToMove ? Color.WHITE : Color.BLACK, board);
-            Piece piece = board.getPiece(coordinates);
+            Piece piece = board.getPiece(sourceCoordinates);
+            Set<Coordinates> availableMoveSquares = piece.getAvailableMoveSquares(board);
+
+            Coordinates targetCoordinates = InputCoordinates.inputAvailableSquare(availableMoveSquares);
+
+            board.movePiece(sourceCoordinates, targetCoordinates);
             //make move
+
             //pass move
             isWhiteToMove =! isWhiteToMove;
         }
