@@ -4,21 +4,11 @@
     <option name="autoReloadType" value="ALL" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c8719a20-e232-4ceb-bb9c-f48e1bfe2c42" name="Changes" comment="правки">
-      <change afterPath="$PROJECT_DIR$/src/main/Game.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/InputCoordinates.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/piece/CoordinatesShift.java" afterDir="false" />
+    <list default="true" id="c8719a20-e232-4ceb-bb9c-f48e1bfe2c42" name="Changes" comment="первые шаги">
+      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/Board.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/Board.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/Coordinates.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/Coordinates.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/piece/Bishop.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/piece/Bishop.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/piece/King.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/piece/King.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/piece/Knight.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/piece/Knight.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/piece/Pawn.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/piece/Pawn.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/piece/Piece.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/piece/Piece.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/piece/Queen.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/piece/Queen.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/piece/Rook.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/piece/Rook.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/File.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/File.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/InputCoordinates.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/InputCoordinates.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -60,7 +50,20 @@
       <recent name="main" />
     </key>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="Application.InputCoordinates">
+    <configuration name="InputCoordinates" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="main.InputCoordinates" />
+      <module name="Chess" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="main.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="main.Main" />
       <module name="Chess" />
@@ -76,6 +79,7 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.InputCoordinates" />
         <item itemvalue="Application.Main" />
       </list>
     </recent_temporary>
@@ -138,7 +142,14 @@
       <option name="project" value="LOCAL" />
       <updated>1703206465658</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="первые шаги">
+      <created>1703209889710</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1703209889710</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -158,6 +169,7 @@
     <MESSAGE value="Шахматы" />
     <MESSAGE value="Шахматы - нормальная ширина ячеек" />
     <MESSAGE value="правки" />
-    <option name="LAST_COMMIT_MESSAGE" value="правки" />
+    <MESSAGE value="первые шаги" />
+    <option name="LAST_COMMIT_MESSAGE" value="первые шаги" />
   </component>
 </project>
