@@ -12,6 +12,15 @@ public class Board {
         pieces.put(coordinates, piece);
     }
 
+    public void removePiece(Coordinates coordinates) {
+        pieces.remove(coordinates);
+    }
+
+    public void movePiece(Coordinates from, Coordinates to) {
+        Piece piece = gerPiece(from);
+        setPiece(to, piece);
+    }
+
     public void setupDefaultPiecesPositions() {
         for (File file : File.values()) {
             setPiece(new Coordinates(file, 2), new Pawn(Color.WHITE, new Coordinates(file, 2)));
