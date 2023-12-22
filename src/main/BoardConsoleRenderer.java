@@ -13,11 +13,11 @@ public class BoardConsoleRenderer {
         for (int rank = 8; rank >= 1; rank--) {
             String line = "  ";
             for (File file : File.values()) {
-                Cordinates cordinates = new Cordinates(file, rank);
-                if (board.isSquareEmpty(cordinates)) {
-                    line += getSpriteForEmprtySquare(cordinates);
+                Coordinates coordinates = new Coordinates(file, rank);
+                if (board.isSquareEmpty(coordinates)) {
+                    line += getSpriteForEmprtySquare(coordinates);
                 } else {
-                    line += getPieceSprite(board.gerPiece(cordinates));
+                    line += getPieceSprite(board.gerPiece(coordinates));
                 }
             }
             line += ANSI_RESET;
@@ -27,10 +27,10 @@ public class BoardConsoleRenderer {
 
     private String getPieceSprite(Piece piece) {
         return colorizeSprite(" " + setUnicodeSpriteForPiece(piece) + " ", piece.color,
-                Board.isSqureDark(piece.cordinates));
+                Board.isSqureDark(piece.coordinates));
     }
 
-    private String getSpriteForEmprtySquare(Cordinates cordinates) {
+    private String getSpriteForEmprtySquare(Coordinates cordinates) {
         return colorizeSprite("ㅤ  ", Color.WHITE, Board.isSqureDark(cordinates));
     }
 

@@ -4,9 +4,17 @@
     <option name="autoReloadType" value="ALL" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c8719a20-e232-4ceb-bb9c-f48e1bfe2c42" name="Changes" comment="Шахматы">
+    <list default="true" id="c8719a20-e232-4ceb-bb9c-f48e1bfe2c42" name="Changes" comment="Шахматы - нормальная ширина ячеек">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/BoardConsoleRenderer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/BoardConsoleRenderer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/Board.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/Board.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/Cordinates.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/Coordinates.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/piece/Bishop.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/piece/Bishop.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/piece/King.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/piece/King.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/piece/Knight.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/piece/Knight.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/piece/Pawn.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/piece/Pawn.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/piece/Piece.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/piece/Piece.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/piece/Queen.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/piece/Queen.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/piece/Rook.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/piece/Rook.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -111,7 +119,14 @@
       <option name="project" value="LOCAL" />
       <updated>1703201943599</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="Шахматы - нормальная ширина ячеек">
+      <created>1703205617907</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1703205617907</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -129,6 +144,7 @@
     <MESSAGE value="Шахматы: классы - фигуры, доска, координаты" />
     <MESSAGE value="Шахматы: цвета доски и фигур, белые - не белые..." />
     <MESSAGE value="Шахматы" />
-    <option name="LAST_COMMIT_MESSAGE" value="Шахматы" />
+    <MESSAGE value="Шахматы - нормальная ширина ячеек" />
+    <option name="LAST_COMMIT_MESSAGE" value="Шахматы - нормальная ширина ячеек" />
   </component>
 </project>

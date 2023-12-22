@@ -4,7 +4,7 @@ import main.*;
 
 public class Knight extends Piece {
 
-    public Knight(Color color, Cordinates cordinates) {
-        super(color, cordinates);
+    public Knight(Color color, Coordinates coordinates) {
+        super(color, coordinates);
     }
 }

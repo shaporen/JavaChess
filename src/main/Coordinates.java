@@ -2,11 +2,11 @@ package main;
 
 import java.util.*;
 
-public class Cordinates {
+public class Coordinates {
     public final File file;
     public final Integer rank;
 
-    public Cordinates(File file, Integer rank) {
+    public Coordinates(File file, Integer rank) {
         this.file = file;
         this.rank = rank;
     }
@@ -19,7 +19,7 @@ public class Cordinates {
         if (o == null || getClass() != o.getClass()) {
             return false;
         }
-        Cordinates that = (Cordinates) o;
+        Coordinates that = (Coordinates) o;
         return file == that.file && rank.equals(that.rank);
     }
 
